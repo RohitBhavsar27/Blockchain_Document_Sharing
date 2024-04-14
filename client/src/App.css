@@ -1,0 +1,217 @@
+/* src/fonts.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
+
+/* Add your global styles here, for example: */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.video-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: -1;
+}
+
+/* Style for the video element */
+video {
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* .bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+} */
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+.content {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0.25em;
+  box-shadow: 0 0 0.25em rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
+  left: 50%;
+  padding: 10vmin;
+  position: fixed;
+  text-align: center;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+h1 {
+  font-family: monospace;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 900px;
+}
+header {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0 0 85% 85% / 30%;
+}
+header .overlay {
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #333;
+  background-image: linear-gradient(135deg, #9f05ff69 10%, #fd5e086b 100%);
+}
+
+h1 {
+  font-family: "Montserrat", sans-serif; /* Apply 'Montserrat' and fallback to a default sans-serif font */
+  color: white; /* Set the color of the title to white as shown in your image */
+  font-size: 80px; /* Adjust the font size as needed */
+  font-weight: 10; /* Make the font bold */
+  text-align: center; /* Center the title if desired */
+  padding: 20px; /* Add some padding around the title */
+  background-color: transparent; /* Set the background color to black as in the image */
+  margin: 0; /* Remove default margins if needed */
+}
+
+h3,
+p {
+  font-family: "Open Sans", sans-serif;
+  margin-bottom: 30px;
+}
+.share {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px; /* Adjust as necessary to match the curvature */
+  border: 1px solid white;
+  background-image: linear-gradient(
+    to bottom right,
+    #000,
+    #333
+  ); /* Adjust the colors to match */
+  color: #fff;
+  /* text-transform: uppercase; For uppercase text */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none; /* If your button is a link */
+  letter-spacing: 1px; /* Adjust letter spacing as necessary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust for any visible shadow */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.share:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #333,
+    #555
+  ); /* Darker gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+#account {
+  position: fixed; /* Makes the account info stay at the bottom */
+  left: 0;
+  right: 0;
+  bottom: 10px; /* Adjust the distance from the bottom */
+  background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay for better readability */
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px; /* Gives a rounded effect */
+  font-size: 15px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  background-color: transparent;
+  letter-spacing: 1px;
+}

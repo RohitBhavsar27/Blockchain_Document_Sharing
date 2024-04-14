@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&display=swap");
+
+/* Add your global styles here, for example: */
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.top {
+  margin: 40px;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+.choose {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px; /* Adjust as necessary to match the curvature */
+  border: 1px solid white;
+  background-image: linear-gradient(
+    to bottom right,
+    #000,
+    #333
+  ); /* Adjust the colors to match */
+  color: #fff;
+  font-size: 16px; /* Adjust the font size as needed */
+  /* text-transform: uppercase; For uppercase text */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none; /* If your button is a link */
+  letter-spacing: 1px; /* Adjust letter spacing as necessary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust for any visible shadow */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.choose:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #333,
+    #555
+  ); /* Darker gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+.textArea {
+  padding: 15px;
+  color: white;
+}
+
+.upload {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 20px; /* Adjust as necessary to match the curvature */
+  border: 1px solid white;
+  background-image: linear-gradient(
+    to bottom right,
+    #000,
+    #333
+  ); /* Adjust the colors to match */
+  color: #fff;
+  font-size: 16px; /* Adjust the font size as needed */
+  /* text-transform: uppercase; For uppercase text */
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none; /* If your button is a link */
+  letter-spacing: 1px; /* Adjust letter spacing as necessary */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adjust for any visible shadow */
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.upload:hover {
+  background-image: linear-gradient(
+    to bottom right,
+    #333,
+    #555
+  ); /* Darker gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+}
+
+.upload:disabled,
+.upload[disabled] {
+  border: 1px solid #999999;
+  background-color: #cccccc;
+  color: #666666;
+}
+
+.upload:active {
+  background-color: #298e46;
+  box-shadow: rgba(20, 70, 32, 0.2) 0 1px 0 inset;
+}
+
+div {
+  padding: 5px 10px;
+}
