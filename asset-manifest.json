@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Blockchain_Document_Sharing/static/css/main.8701e61c.css",
+    "main.js": "/Blockchain_Document_Sharing/static/js/main.d9fc5a6e.js",
+    "static/js/453.258b012d.chunk.js": "/Blockchain_Document_Sharing/static/js/453.258b012d.chunk.js",
+    "static/media/video.mp4": "/Blockchain_Document_Sharing/static/media/video.d48e218167a19525e9ae.mp4",
+    "static/media/index.cjs": "/Blockchain_Document_Sharing/static/media/index.61e57bb6b4fd6fcd0938.cjs",
+    "index.html": "/Blockchain_Document_Sharing/index.html",
+    "main.8701e61c.css.map": "/Blockchain_Document_Sharing/static/css/main.8701e61c.css.map",
+    "main.d9fc5a6e.js.map": "/Blockchain_Document_Sharing/static/js/main.d9fc5a6e.js.map",
+    "453.258b012d.chunk.js.map": "/Blockchain_Document_Sharing/static/js/453.258b012d.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8701e61c.css",
+    "static/js/main.d9fc5a6e.js"
+  ]
+}
