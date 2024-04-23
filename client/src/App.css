@@ -205,7 +205,12 @@ p {
   left: 0;
   right: 0;
   bottom: 10px; /* Adjust the distance from the bottom */
-  background: rgba(0, 0, 0, 0.5); /* Adds a semi-transparent overlay for better readability */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); /* Adds a semi-transparent overlay for better readability */
   text-align: center;
   padding: 10px;
   border-radius: 10px; /* Gives a rounded effect */
