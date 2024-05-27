@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./FileUpload.css";
+const { PINATA_URL, PINATA_API_KEY, PINATA_SECRET_API_KEY } = process.env;
 const FileUpload = ({ contract, account, provider }) => {
   const [file, setFile] = useState(null);
   const [fileName, setFileName] = useState("No File Selected");
@@ -14,11 +15,11 @@ const FileUpload = ({ contract, account, provider }) => {
 
         const resFile = await axios({
           method: "post",
-          url: "https://api.pinata.cloud/pinning/pinFileToIPFS",
+          url: PINATA_URL,
           data: formData,
           headers: {
-            pinata_api_key: `fd8b97b7b39398653dba`,
-            pinata_secret_api_key: `537f61b670bd4ff9bce0c6874f3a5f3f24e93e7b97032e4b90a1ad4d7130bff1`,
+            pinata_api_key: PINATA_API_KEY,
+            pinata_secret_api_key: PINATA_SECRET_API_KEY,
             "Content-Type": "multipart/form-data",
           },
         });

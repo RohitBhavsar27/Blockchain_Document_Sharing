@@ -8,6 +8,7 @@ import Modal from "./components/Modal";
 import Upload from "./artifacts/contracts/Upload.sol/Upload.json";
 import { useState, useEffect } from "react";
 const ethers = require("ethers");
+const { CONTRACT_ADDRESS } = process.env;
 
 function App() {
   const [account, setAccount] = useState("");
@@ -31,7 +32,7 @@ function App() {
         const signer = await provider.getSigner();
         const address = (await signer).address;
         setAccount(address);
-        let contractAddress = "0xdE595f2E9Cc6c599aD76D7F6e3cDaCCa1bbE0735";
+        let contractAddress = CONTRACT_ADDRESS;
 
         const contract = new ethers.Contract(
           contractAddress,
@@ -93,3 +94,4 @@ function App() {
 
 export default App;
 // 0xD80CebD65a93B0E35fC1532Ab98cC93cE1a88B63
+// 0xdE595f2E9Cc6c599aD76D7F6e3cDaCCa1bbE0735

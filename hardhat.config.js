@@ -9,7 +9,7 @@ module.exports = {
   networks: {
     sepolia: {
       url: API_URL,
-      accounts: [`0x${PRIVATE_KEY1}`]
+      //accounts: [`0x${PRIVATE_KEY1}`]
     },
   },
   paths: {
