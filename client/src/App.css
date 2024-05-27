@@ -142,6 +142,8 @@ header {
   position: relative;
   overflow: hidden;
   border-radius: 0 0 85% 85% / 30%;
+  
+
 }
 header .overlay {
   width: 100%;
@@ -170,7 +172,7 @@ p {
 }
 .share {
   margin-top: 10px;
-  display: inline-block;
+  display: flex;
   padding: 10px 20px;
   border-radius: 20px; /* Adjust as necessary to match the curvature */
   border: 1px solid white;

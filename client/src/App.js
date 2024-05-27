@@ -1,4 +1,5 @@
 import "./App.css";
+import React from "react";
 import metamaskIcon from './components/icon.png';
 import videobg from "./components/video/video.mp4"
 import FileUpload from "./components/FileUpload";
@@ -30,7 +31,7 @@ function App() {
         const signer = await provider.getSigner();
         const address = (await signer).address;
         setAccount(address);
-        let contractAddress = "0x5f932a6e86b009fDFFB6a76Bf6d37E624A14C5B9";
+        let contractAddress = "0xdE595f2E9Cc6c599aD76D7F6e3cDaCCa1bbE0735";
 
         const contract = new ethers.Contract(
           contractAddress,
@@ -83,6 +84,8 @@ function App() {
           Account: {account ? account : "Not connected"}
         </p>
       </div>
+
+
 
     </>
   );
